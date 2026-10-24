@@ -24,7 +24,7 @@ jobs:
         env:
           GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GHCR_USER: ${{ github.actor }}
-          IMAGE: ghcr.io/rogernavelsaker/agent-services-caveman
+          IMAGE: ghcr.io/rogernavelsaker/caveman
         run: |
           set -euo pipefail
           docker load --input /tmp/caveman-image
