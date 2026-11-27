@@ -12,4 +12,6 @@ permissions:
 jobs:
   ci:
     uses: RogerNavelsaker/nixpkgs/.github/workflows/reusable-ci.yml@main
+    with:
+      build_targets: ".#caveman-image .#caveman-cli"
     secrets: inherit
